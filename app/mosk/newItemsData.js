@@ -1,4 +1,7 @@
 import photo from "../../public/images/image1.png";
+import photo2 from "../../public/images/image2.png";
+import photo3 from "../../public/images/image3.png";
+import photo4 from "../../public/images/image4.png";
 
 const newItemsData = [
   {
@@ -12,7 +15,7 @@ const newItemsData = [
   },
   {
     id: 2,
-    photo: photo,
+    photo: photo2,
     collection: "Магическая битва",
     title: "Футболка Магическая битва",
     price: "10 000",
@@ -20,7 +23,7 @@ const newItemsData = [
   },
   {
     id: 3,
-    photo: photo,
+    photo: photo3,
     collection: "клинок рассекающий демонов",
     title:
       "Футболка аниме клинок рассекающий демонов, чёрный цвет, 46 размер, 100% хлопок",
@@ -29,7 +32,7 @@ const newItemsData = [
   },
   {
     id: 4,
-    photo: photo,
+    photo: photo4,
     collection: "Магическая битва",
     title: "Футболка Магическая битва",
     price: "10 000",

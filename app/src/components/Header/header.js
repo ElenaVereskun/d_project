@@ -35,10 +35,10 @@ export default function Header() {
           <li>Новости</li>
           <li>Контакты</li>
         </ul>
-        <div className={styles.header__phone} onClick={toggleOpen}>
+        <button className={styles.header__phone} onClick={toggleOpen}>
           <Image src={phone} alt="телефон" width={16} height={16} />
           <p className={styles.header__number}>+7 900 000-00-00</p>
-        </div>
+        </button>
         <div className={styles.header__account}>
           <Image src={account} alt="аккаунт" width={16} height={16} />
           <p className={styles.header__email}>Alexsandеr@gmail.com</p>
@@ -58,7 +58,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      {/*  <Popup isOpen={isOpen} /> */}
+      <Popup isOpen={isOpen} />
     </section>
   );
 }

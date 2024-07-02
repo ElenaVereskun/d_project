@@ -4,7 +4,7 @@
   padding: 20px 40px 0 40px;
   margin-bottom: -100px;
   z-index: 1;
-  width: 1920px;
+  /* max-width: 1920px; */
 }
 .header__items {
   display: flex;
