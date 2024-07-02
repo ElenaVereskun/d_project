@@ -1,0 +1,47 @@
+.collections {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.collection {
+  display: flex;
+  background-color: #231f20;
+  border-radius: 20px;
+}
+.collection__text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 13px 20px 20px;
+  justify-content: space-between;
+}
+.collection__top {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.8px;
+  letter-spacing: 0.05em;
+  color: #8c8c8c;
+  padding-bottom: 8px;
+}
+.collection__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: white;
+}
+.collection__button {
+  height: 44px;
+  width: 44px;
+  background-color: #666666;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collection4 {
+  grid-row: span 2;
+  background-color: #231f20;
+  border-radius: 20px;
+}

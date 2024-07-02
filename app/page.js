@@ -1,7 +1,7 @@
 import Header from "./src/components/Header/header";
 import NewItems from "./src/components/NewItems/NewItems";
-import Popular from "./src/components/Popular/Popular";
 import Slider from "./src/components/Slider/Slider";
+import Collections from "./src/components/Collections/Collections";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
       <Slider />
       <NewItems />
-      <Popular />
+      <Collections />
     </main>
   );
 }

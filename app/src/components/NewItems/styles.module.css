@@ -72,9 +72,6 @@
   .custom_swiper_pagination_bullet:active {
     background-color: blue;
   }
-  .image {
-  }
-
   .swiper-slide {
     max-width: 320px;
   }
