@@ -21,14 +21,6 @@
   display: block;
 }
 
-.swiper_button_prev {
-  color: black;
-  width: 200px;
-  height: 200px;
-  background-color: brown;
-
-}
-
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   .image {
     height: 820px;

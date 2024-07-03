@@ -50,7 +50,8 @@ export default function NewItems() {
                   exPrice={item.exPrice}
                 />
                 <div className="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
+                <div className="swiper-button-next"></div>
+                <div className="swiper-button-prev"></div>
               </SwiperSlide>
             ))}
         </Swiper>

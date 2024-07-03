@@ -24,27 +24,27 @@ const collectionsData = [
     collection: "Евангелион",
   },
   {
-    id: 3,
+    id: 4,
     photo: collectionImage3,
     collection: "Клинок рассекающий демонов",
   },
   {
-    id: 4,
+    id: 5,
     photo: collectionImage4,
     collection: "Берсерк",
   },
   {
-    id: 5,
+    id: 6,
     photo: collectionImage5,
     collection: "Моя геройская академия",
   },
   {
-    id: 6,
+    id: 7,
     photo: collectionImage6,
     collection: "Блич",
   },
   {
-    id: 7,
+    id: 8,
     photo: collectionImage7,
     collection: "One-Punch Man",
   },

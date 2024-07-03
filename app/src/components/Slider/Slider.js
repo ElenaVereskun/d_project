@@ -54,9 +54,11 @@ export default function Slider() {
             <SwiperSlide key={item.id}>
               <Image src={item.photo} alt="фото" className={styles.image} />
               <div className="swiper-pagination"></div>
-              <div class="swiper-button-next">
+              <div className="swiper-button-next">
               </div>
-              <div class="swiper_button_prev">
+              <div className="swiper-button-prev">
+              </div>
+              <div className={styles.swiper_button_prev}>
                 <Image src={arrow} alt="стрелка" />
               </div>
 

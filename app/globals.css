@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --font-manrope-global: var(--font-manrope), "Bodoni MT", serif;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,14 +11,7 @@
 }
 
 body {
-  /*   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
   background: #f1f4f5;
-  font-family: var(--font-manrope);
   margin: 20px;
 }
 @media (max-width: 360px) {

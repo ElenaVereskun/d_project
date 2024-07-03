@@ -1,5 +1,8 @@
 .collectionCard {
   display: flex;
+  background-color: #231f20;
+  border-radius: 20px;
+  justify-content: space-between;
 }
 .collection__text {
   display: flex;
@@ -29,4 +32,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.collection__image{
+  border-radius: 20px;
+}
+.collectionCard_size_big {
+  display: flex;
+  background-color: #231f20;
+  border-radius: 20px;
+  justify-content: space-between;
 }
