@@ -1,0 +1,13 @@
+.drop__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.drop__item {
+    color: #231F20;
+    font-size: 14px;
+    font-weight: 400;
+
+}

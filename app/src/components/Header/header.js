@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import Popup from "../Popup/Popup";
+import PopupCallback from "../PopupCallback/PopupCallback";
+import CatalogDropMenu from "../Menu/CatalogDropMenu/CatalogDropMenu";
 
 import logo from "../../../../public/images/logo.svg";
 import phone from "../../../../public/images/phoneIcon.svg";
@@ -14,6 +15,15 @@ import styles from "./styles.module.css";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenDrop, setIsOpenDrop] = useState(false);
+
+  const toggleDrop = () => {
+    setIsOpenDrop(!isOpenDrop);
+  };
+
+  const closeDrop = () => {
+    setIsOpenDrop(false);
+  };
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -27,7 +37,21 @@ export default function Header() {
       <div className={styles.header__items}>
         <Image src={logo} alt="лого" className={styles.header__logo} />
         <ul className={styles.header__catalog}>
-          <li>Аниме</li>
+          <li>
+            <button onClick={toggleDrop}>
+              Аниме
+              {isOpenDrop && (
+                <div className={styles.header__drop_arrow}>
+                  <div className={styles.header__drop}>
+                    <CatalogDropMenu />
+                    <CatalogDropMenu />
+                    <CatalogDropMenu />
+                  </div>
+                </div>
+
+              )}
+            </button>
+          </li>
           <li>Футболки</li>
           <li>Лонгсливы</li>
           <li>худи</li>
@@ -58,7 +82,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <Popup isOpen={isOpen} onClickCloseButton={closePopup} />
+      <PopupCallback isOpen={isOpen} onClickCloseButton={closePopup} />
     </section>
   );
 }

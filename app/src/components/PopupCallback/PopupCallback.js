@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./styles.module.css";
 import cross from "../../../../public/images/cross.svg"
 
-export default function Popup({ isOpen, onClickCloseButton }) {
+export default function PopupCallback({ isOpen, onClickCloseButton }) {
   return (
     <div className={isOpen ? styles.popup : styles.popup_block}>
       <div className={styles.popup__container}>
