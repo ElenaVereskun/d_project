@@ -19,9 +19,9 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
 
-  const closeDrop = () => {
+  const closePopup = () => {
     setIsOpen(false);
-  };
+  }
   return (
     <section className={styles.header}>
       <div className={styles.header__items}>
@@ -58,7 +58,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <Popup isOpen={isOpen} />
+      <Popup isOpen={isOpen} onClickCloseButton={closePopup} />
     </section>
   );
 }

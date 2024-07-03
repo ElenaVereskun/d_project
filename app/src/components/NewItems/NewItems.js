@@ -24,7 +24,7 @@ export default function NewItems() {
       bulletActiveClass: styles.custom_swiper_pagination_bullet_active,
       bulletClass: styles.custom_swiper_pagination_bullet,
       clickable: true,
-    },
+    }
   };
 
   return (
@@ -50,6 +50,7 @@ export default function NewItems() {
                   exPrice={item.exPrice}
                 />
                 <div className="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
               </SwiperSlide>
             ))}
         </Swiper>

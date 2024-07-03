@@ -3,11 +3,12 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 import photo from "../../../../public/images/imageMain.png";
 import photo1 from "../../../../public/images/imageMain.png";
 import photo2 from "../../../../public/images/imageMain.png";
+import arrow from "../../../../public/images/arrow.svg";
 
 import styles from "./styles.module.css";
 
@@ -19,11 +20,15 @@ export default function Slider() {
     followFinger: true,
     speed: 1000,
     loop: false,
-    modules: [Pagination],
+    modules: [Pagination, Navigation],
     pagination: {
       bulletActiveClass: styles.custom_swiper_pagination_bullet_active,
       bulletClass: styles.custom_swiper_pagination_bullet,
       clickable: true,
+    },
+    navigation: {
+      nextEl: styles.swiper_button_next,
+      prevEl: styles.swiper_button_prev
     },
   };
 
@@ -41,7 +46,6 @@ export default function Slider() {
       photo: photo2,
     },
   ];
-
   return (
     <div className={styles.slider_container}>
       <Swiper {...parametr} className={styles.swiper}>
@@ -50,6 +54,12 @@ export default function Slider() {
             <SwiperSlide key={item.id}>
               <Image src={item.photo} alt="фото" className={styles.image} />
               <div className="swiper-pagination"></div>
+              <div class="swiper-button-next">
+              </div>
+              <div class="swiper_button_prev">
+                <Image src={arrow} alt="стрелка" />
+              </div>
+
             </SwiperSlide>
           ))}
       </Swiper>

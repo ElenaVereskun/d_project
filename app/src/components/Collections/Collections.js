@@ -170,10 +170,12 @@ export default function Collections() {
         ))}
         {collectionsData.slice(4, 6).map((item) => (
           <li className={styles.collection_size_big} id={item.id}>
-            <CollectionCard
-              title={item.collection}
-              collectionImage={item.photo}
-            />
+           
+              <CollectionCard
+                title={item.collection}
+                collectionImage={item.photo}
+              />
+           
           </li>
         ))}
         <li className={styles.collection__top}>
