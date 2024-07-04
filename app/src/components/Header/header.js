@@ -41,7 +41,6 @@ export default function Header() {
 
   return (
     <section className='header'>
-
       <div className='header__items'>
         <Image src={logo} alt="лого" className='header__logo' />
         <ul className='header__catalog'>
@@ -94,8 +93,7 @@ export default function Header() {
             <MenuBurgerPopup onClickCloseButton={closeMenu} />
           )}
         </button>
-      </div>
-
+      </div>      
       <PopupCallback isOpen={isOpen} onClickCloseButton={closePopup} />
     </section>
   );

@@ -9,7 +9,7 @@ import CatalogDropMenu from "../CatalogDropMenu/CatalogDropMenu";
 
 export default function MenuBurgerPopup({ onClickCloseButton }) {
 
-    const [isOpenDrop, setIsOpenDrop] = useState(false);
+    const [isOpenDrop, setIsOpenDrop] = useState(true);
     const toggleDrop = () => {
         setIsOpenDrop(!isOpenDrop);
     };
@@ -20,13 +20,15 @@ export default function MenuBurgerPopup({ onClickCloseButton }) {
                 <Image src={cross} alt="закрыть" />
             </button>
             <ul className='menu__items'>
-                <li className='menu__item' onClick={toggleDrop}>
-                    <p>АНИМЕ</p>
-                    {isOpenDrop ? (
-                        <Image src={arrowUp} alt="стрелка" />
-                    ) : (
-                        <Image src={arrowDown} alt="стрелка" />
-                    )}
+                <li className='menu__item' >
+                    <div className='menu__item-wrapper'>
+                        <button onClick={toggleDrop}>АНИМЕ</button>
+                        {isOpenDrop ? (
+                            <Image src={arrowUp} alt="стрелка" />
+                        ) : (
+                            <Image src={arrowDown} alt="стрелка" />
+                        )}
+                    </div>
                     {isOpenDrop && (
                         <div className='menu__drop'>
                             <CatalogDropMenu />
@@ -38,11 +40,18 @@ export default function MenuBurgerPopup({ onClickCloseButton }) {
                 <li className='menu__item'>Футболки</li>
                 <li className='menu__item'>Лонгсливы</li>
                 <li className='menu__item'>худи</li>
-                <li className='menu__item'>Инфо
-                    <Image src={arrowDown} alt="Стрелка" />
+                <li className='menu__item'>
+                    <div className='menu__item-wrapper'>
+                        <button>ИНФО</button>
+                        <Image src={arrowDown} alt="Стрелка" />
+                    </div>
+
                 </li>
-                <li className='menu__item'>Новости
-                    <Image src={arrowDown} alt="Стрелка" />
+                <li className='menu__item'>
+                    <div className='menu__item-wrapper'>
+                        <button>НОВОСТИ</button>
+                        <Image src={arrowDown} alt="Стрелка" />
+                    </div>
                 </li>
                 <li className='menu__item'>Контакты</li>
             </ul>

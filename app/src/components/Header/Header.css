@@ -99,6 +99,10 @@
   display: none;
 }
 
+.header__nav-container{
+  display: none;
+}
+
 /* макет на 1440 */
 @media screen and (max-width: 1919px) {
   .header {
@@ -198,7 +202,7 @@
   }
 }
 
-/* макет на 320 */
+/* макет на 360 */
 @media screen and (max-width: 743px) {
   .header {
     max-width: 320px;
@@ -222,5 +226,3 @@
     display: none;
   }
 }
-
-@media screen and (max-width: 320px) {}
