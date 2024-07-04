@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import PopupCallback from "../PopupCallback/PopupCallback";
 import CatalogDropMenu from "../Menu/CatalogDropMenu/CatalogDropMenu";
+import MenuBurgerPopup from "../Menu/MenuBurgerPopup/MenuBurgerPopup";
 
 import logo from "../../../../public/images/logo.svg";
 import phone from "../../../../public/images/phoneIcon.svg";
@@ -10,14 +11,12 @@ import account from "../../../../public/images/accountIcon.svg";
 import search from "../../../../public/images/search.svg";
 import like from "../../../../public/images/like.svg";
 import bag from "../../../../public/images/shopping-bag.png";
+import menu from "../../../../public/images/menu.svg";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenDrop, setIsOpenDrop] = useState(false);
-
-  const toggleDrop = () => {
-    setIsOpenDrop(!isOpenDrop);
-  };
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -26,6 +25,20 @@ export default function Header() {
   const closePopup = () => {
     setIsOpen(false);
   }
+
+  const toggleDrop = () => {
+    setIsOpenDrop(!isOpenDrop);
+  };
+
+  const toggleOpenMenu = () => {
+    setIsOpenMenu(!isOpenMenu);
+  };
+
+  const closeMenu = () => {
+    setIsOpenMenu(false);
+  }
+
+
   return (
     <section className='header'>
       <div className='header__items'>
@@ -63,17 +76,23 @@ export default function Header() {
         </div>
         <div className='header__icons'>
           <button>
-            <Image src={search} alt="Поиск" />
+            <Image src={search} alt="Поиск" width={20} height={20} className='header__icon-img' />
           </button>
           <button className='header__icon'>
-            <Image src={like} alt="Избранное" />
+            <Image src={like} alt="Избранное" width={20} height={20} className='header__icon-img' />
             <div className='header__counter'>10</div>
           </button>
           <button className='header__icon'>
-            <Image src={bag} alt="Корзина" />
+            <Image src={bag} alt="Корзина" width={20} height={20} className='header__icon-img' />
             <div className='header__counter'>10</div>
           </button>
         </div>
+        <button className=" header__menu" onClick={toggleOpenMenu}>
+          <Image src={menu} alt="Меню" />
+          {isOpenMenu && (
+            <MenuBurgerPopup onClickCloseButton={closeMenu} />
+          )}
+        </button>
       </div>
       <PopupCallback isOpen={isOpen} onClickCloseButton={closePopup} />
     </section>

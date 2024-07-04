@@ -21,7 +21,6 @@
 
 .header__catalog li {
   text-transform: uppercase;
-  font-family: var(--font-manrope);
   font-size: 14px;
   font-weight: 700;
   line-height: 19px;
@@ -51,9 +50,10 @@
   text-transform: uppercase;
 }
 
-.header__email {
+.header__score {
   font-size: 14px;
   font-weight: 400;
+  line-height: 22px;
 }
 
 .header__icons {
@@ -95,3 +95,132 @@
   border-left: 20px solid transparent;
   border-bottom: 20px solid #fff;
 }
+
+.header__menu {
+  display: none;
+}
+
+/* макет на 1440 */
+@media screen and (max-width: 1919px) {
+  .header {
+    max-width: 1360px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .header__items {
+    gap: 89px;
+  }
+
+  .header__logo {
+    width: 80px;
+    height: 57px;
+  }
+
+  .header__catalog {
+    gap: 10px;
+  }
+
+  .header__catalog li {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .header__phone {
+    gap: 4px;
+  }
+
+  .header__number {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .header__account {
+    gap: 4px;
+  }
+
+  .header__email {
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 130px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .header__score {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .header__counter {
+    display: none;
+  }
+}
+
+/* макет на 1200 */
+@media screen and (max-width: 1439px) {
+  .header {
+    max-width: 1120px;
+  }
+
+  .header__items {
+    gap: 29px;
+  }
+}
+
+/* макет на 744 */
+@media screen and (max-width: 1199px) {
+  .header {
+    max-width: 684px;
+    padding: 10px 10px 0 10px;
+  }
+
+  .header__items {
+    gap: 37.25px;
+  }
+
+  .header__logo {
+    width: 70px;
+    height: 49px;
+  }
+
+  .header__icon-img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .header__catalog {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    position: relative;
+  }
+}
+
+/* макет на 320 */
+@media screen and (max-width: 743px) {
+  .header {
+    max-width: 320px;
+  }
+
+  .header__logo {
+    width: 50px;
+    height: 30px;
+  }
+
+  .header__items {
+    gap: 55px;
+  }
+
+  .header__account {
+    display: none;
+  }
+
+  .header__icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {}

@@ -1,6 +1,7 @@
 @import url(./src/components/Header/Header.css);
 @import url(./src/components/PopupCallback/PopupCallBack.css);
 @import url(./src/components/Menu/CatalogDropMenu/CatalogDropMenu.css);
+@import url(./src/components/Menu/MenuBurgerPopup/MenuBurgerPopup.css);
 @import url(./src/components/SliderMain/SliderMain.css);
 @import url(./src/components/NewItems/NewItems.css);
 @import url(./src/components/CardNewItem/CardNewItem.css);
