@@ -1,8 +1,7 @@
 .header {
   color: white;
   position: relative;
-  padding: 20px 40px 0 40px;
-  margin-bottom: -100px;
+  margin: 20px 40px -100px 40px;
   z-index: 10;
   max-width: 1920px;
 }
@@ -104,7 +103,7 @@
 @media screen and (max-width: 1919px) {
   .header {
     max-width: 1360px;
-    padding: 20px 20px 0 20px;
+    margin: 20px 20px -80px 20px;
   }
 
   .header__items {
@@ -172,7 +171,7 @@
 @media screen and (max-width: 1199px) {
   .header {
     max-width: 684px;
-    padding: 10px 10px 0 10px;
+    margin: 10px 10px -60px 10px;
   }
 
   .header__items {
@@ -203,6 +202,7 @@
 @media screen and (max-width: 743px) {
   .header {
     max-width: 320px;
+    margin: 10px 10px -40px 10px;
   }
 
   .header__logo {

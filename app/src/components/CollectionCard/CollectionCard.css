@@ -4,12 +4,14 @@
   border-radius: 20px;
   justify-content: space-between;
 }
+
 .collectionCard__text {
   display: flex;
   flex-direction: column;
   padding: 20px 13px 20px 20px;
   justify-content: space-between;
 }
+
 .collectionCard__top {
   font-size: 12px;
   font-weight: 700;
@@ -18,12 +20,14 @@
   color: #8c8c8c;
   padding-bottom: 8px;
 }
+
 .collectionCard__name {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
   color: white;
 }
+
 .collectionCard__button {
   height: 44px;
   width: 44px;
@@ -33,9 +37,11 @@
   justify-content: center;
   align-items: center;
 }
-.collectionCard__image{
+
+.collectionCard__image {
   border-radius: 20px;
 }
+
 .collectionCard_size_big {
   display: flex;
   background-color: #231f20;
@@ -43,9 +49,84 @@
   justify-content: space-between;
   flex-direction: column;
 }
-.collectionCard__image-wrapper{
+
+.collectionCard__image-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding-left: 20px;
+}
+
+/* макет на 1440 */
+@media screen and (max-width: 1919px) {
+  .collectionCard__text {
+    padding: 12px 24px 12px 12px;
+  }
+
+  .collectionCard__image_size_big {
+    width: 181px;
+    height: 239px;
+  }
+
+  .collectionCard__name {
+    font-size: 16px;
+  }
+
+  .collectionCard__button {
+    height: 32px;
+    width: 32px;
+  }
+
+  .collectionCard__button_size_big {
+    margin-bottom: 12px;
+  }
+
+  .collectionCard__image-wrapper {
+    padding-left: 12px;
+  }
+}
+
+/* макет на 1200 */
+@media screen and (max-width: 1439px) {
+  .collectionCard__name {
+    font-size: 14px;
+  }
+}
+
+/* макет на 744 */
+@media screen and (max-width: 1199px) {
+  .collectionCard {
+    display: flex;
+    position: relative;
+  }
+
+  .collectionCard_size_big {
+    height: 100%;
+  }
+
+  .collectionCard__image {
+    width: 135px;
+    height: 179px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .collectionCard__top {
+    padding-bottom: 4px;
+  }
+}
+
+/* макет на 360 */
+@media screen and (max-width: 743px) {
+  .collectionCard{
+    height: 180px;
+  }
+  .collectionCard__image {
+    width: 136px;
+    height: 180px;
+  }
+  .collectionCard__text{
+    width: 152px;
+  }
 }

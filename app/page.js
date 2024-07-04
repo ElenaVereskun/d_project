@@ -5,7 +5,7 @@ import Collections from "./src/components/Collections/Collections";
 
 export default function Home() {
   return (
-    <main>
+    <main className="main">
       <Header />
       <SliderMain />
       <NewItems />

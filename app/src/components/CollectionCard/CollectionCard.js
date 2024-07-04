@@ -29,13 +29,13 @@ export function CollectionBigCard({ title, collectionImage }) {
         <h2 className='collectionCard__name'>{title}</h2>
       </div>
       <div className='collectionCard__image-wrapper'>
-        <button className='collectionCard__button'>
+        <button className='collectionCard__button collectionCard__button_size_big'>
           <Image src={arrow} alt="стрелка" />
         </button>
         <Image
           src={collectionImage}
           alt="коллекция"
-          className='collectionCard__image'
+          className='collectionCard__image collectionCard__image_size_big'
         />
 
       </div>

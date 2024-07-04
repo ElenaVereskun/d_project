@@ -8,7 +8,7 @@ import arrow from "../../../../public/images/arrow.svg";
 export default function Collections() {
   return (
     <section>
-      <ul className='collections'>
+      <ul className='collections collections_type_desktop'>
         {collectionsData.slice(0, 3).map((item) => (
           <CollectionCard
             title={item.collection}
@@ -38,6 +38,23 @@ export default function Collections() {
             collectionImage={item.photo}
           />
         ))}
+      </ul>
+      <ul className='collections__mobile'>
+        <li>
+          <h2 className='collection__title'>Популярные коллекции</h2>
+        </li>
+        {collectionsData.map((item) => (
+          <CollectionCard
+            title={item.collection}
+            collectionImage={item.photo}
+          />
+        ))}
+        <li className="collection__button-wrapper">
+          <button className='collection__button'>
+            <p className='collection__button_text'>ВСЕ КОЛЛЕКЦИИ</p>
+            <Image src={arrow} alt="стрелка" />
+          </button>
+        </li>
       </ul>
     </section>
   );

@@ -48,7 +48,7 @@ export default function SliderMain() {
               <Image src={item.photo} alt="фото" className='image' />
               <div className="swiper-pagination"></div>
               <div className="swiper-button-next"></div>
-              <div className="swiper-button-prev  swiper__button_prev"></div>
+              <div className="swiper-button-prev swiper__button_prev"></div>
             </SwiperSlide>
           ))}
       </Swiper>

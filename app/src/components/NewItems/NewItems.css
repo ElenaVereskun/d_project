@@ -4,10 +4,12 @@
   gap: 40px;
   padding-top: 100px;
 }
+
 .new__top {
   display: flex;
   justify-content: space-between;
 }
+
 .new__title {
   font-size: 48px;
   font-weight: 700;
@@ -22,6 +24,7 @@
   border-radius: 10px;
   align-items: center;
 }
+
 .new__button_text {
   color: white;
   font-size: 14px;
@@ -30,19 +33,23 @@
   letter-spacing: 0.05em;
   text-align: center;
 }
+
 .swiper {
   display: flex;
   flex-direction: column;
   align-items: center;
   z-index: 0;
 }
+
 .swiper-wrapper {
   gap: 20px;
 }
+
 .slider_container {
   display: flex;
   max-width: 100%;
 }
+
 /* .swiper-slide swiper-slide-active{
   max-width: 455px;
 } */
@@ -53,19 +60,57 @@
   width: 44px;
   background-color: black;
 }
+
 .custom-swiper__button-prev {
   background-image: url(../../../../public/images/arrow-left.svg);
   background-repeat: no-repeat;
   height: 44px;
   width: 44px;
-  background-color: black; 
+  background-color: black;
 }
 
 .slider_container :global .swiper-pagination-bullets {
   display: block;
 }
 
-@media screen and (max-width: 320px) {
+.swiper-slide {
+  width: 455px;
+}
+
+.swiper-slide-active {
+  width: 455px;
+}
+
+.new__button_type_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1919px) {
+  .new__contaner {
+    padding-top: 80px;
+  }
+}
+
+/* макет на 1200 */
+@media screen and (max-width: 1439px) {}
+
+/* макет на 744 */
+@media screen and (max-width: 1199px) {
+  .new__contaner {
+    padding-top: 60px;
+  }
+}
+
+/* макет на 320 */
+@media screen and (max-width: 743px) {
+  .new__button_type_desktop {
+    display: none;
+  }
+
+  .new__button_type_mobile {
+    display: flex;
+    width: 196px;
+  }
   .slider_container :global .swiper-pagination-bullets {
     display: flex;
     justify-content: center;
@@ -89,15 +134,13 @@
   .custom_swiper_pagination_bullet:active {
     background-color: blue;
   }
-  .swiper-slide {
-    max-width: 320px;
-  }
 
-  .swiper-slide-active {
-    max-width: 320px;
-  }
   .custom_swiper_pagination_bullet {
     width: 10px;
     height: 10px;
   }
+}
+
+@media screen and (max-width: 320px) {
+ 
 }
