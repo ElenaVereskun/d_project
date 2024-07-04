@@ -5,12 +5,10 @@ import collectionsData from "../../../mosk/collectionsData";
 
 import arrow from "../../../../public/images/arrow.svg";
 
-import styles from "./styles.module.css";
-
 export default function Collections() {
   return (
     <section>
-      <ul className={styles.collections}>
+      <ul className='collections'>
         {collectionsData.slice(0, 3).map((item) => (
           <CollectionCard
             title={item.collection}
@@ -18,18 +16,18 @@ export default function Collections() {
           />
         ))}
         {collectionsData.slice(3, 5).map((item) => (
-          <li className={styles.collection_size_big} id={item.id}>
+          <li className='collection_size_big' id={item.id}>
             <CollectionBigCard
               title={item.collection}
               collectionImage={item.photo}
             />
           </li>
         ))}
-        <li className={styles.collection__top}>
-          <div className={styles.collection__wrapper}>
-            <h2 className={styles.collection__title}>Популярные коллекции</h2>
-            <button className={styles.collection__button}>
-              <p className={styles.collection__button_text}>ВСЕ КОЛЛЕКЦИИ</p>
+        <li className='collection__top'>
+          <div className='collection__wrapper'>
+            <h2 className='collection__title'>Популярные коллекции</h2>
+            <button className='collection__button'>
+              <p className='collection__button_text'>ВСЕ КОЛЛЕКЦИИ</p>
               <Image src={arrow} alt="стрелка" />
             </button>
           </div>

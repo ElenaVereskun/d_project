@@ -1,4 +1,4 @@
-.card {
+.cardNewItem {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -6,9 +6,10 @@
   border-radius: 20px;
   background-color: white;
   height: 532px;
+  max-width: 455px;
   align-items: center;
 }
-.card__new {
+.cardNewItem__new {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -17,12 +18,12 @@
   line-height: 19px;
   letter-spacing: 0.05em;
 }
-.card__like {
+.cardNewItem__like {
   position: absolute;
   top: 20px;
   right: 20px;
 }
-.card__collection {
+.cardNewItem__collection {
   text-transform: uppercase;
   padding: 4px 8px;
   background-color: #e0e0e0;
@@ -35,7 +36,7 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.card__title {
+.cardNewItem__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
@@ -47,17 +48,17 @@
   height: 50px;
   margin-bottom: 20px;
 }
-.card__prices {
+.cardNewItem__prices {
   display: flex;
   gap: 13px;
   justify-content: center;
 }
-.card__price {
+.cardNewItem__price {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
 }
-.card__exPrice {
+.cardNewItem__exPrice {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;

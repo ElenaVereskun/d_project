@@ -1,30 +1,28 @@
-import styles from "./styles.module.css";
-
 export default function CatalogDropMenu() {
     return (
-        <ol className={styles.drop__items}>
-            <li className={styles.drop__item}>
+        <ol className='drop__items'>
+            <li className='drop__item'>
                 Магическая битва
             </li>
-            <li className={styles.drop__item}>
+            <li className='drop__item'>
                 Клинок, рассекающий демонов
             </li>
-            <li className={styles.drop__item}>
+            <li className='drop__item'>
                 Берсерк
             </li>
-            <li className={styles.drop__item}>
+            <li className='drop__item'>
                 Баскетбол Куроко
             </li>
-            <li className={styles.drop__item}>
+            <li className='drop__item'>
                 Человек-бензопила
             </li>
-            <li className={styles.drop__item}>
+            <li className='drop__item'>
                 Моя геройская академия
             </li>
-            <li className={styles.drop__item}>
+            <li className='drop__item'>
                 Евангелион
             </li>
-            <li className={styles.drop__item}>
+            <li className='drop__item'>
                 Блич
             </li>
         </ol>

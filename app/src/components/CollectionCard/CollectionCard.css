@@ -4,13 +4,13 @@
   border-radius: 20px;
   justify-content: space-between;
 }
-.collection__text {
+.collectionCard__text {
   display: flex;
   flex-direction: column;
   padding: 20px 13px 20px 20px;
   justify-content: space-between;
 }
-.collection__top {
+.collectionCard__top {
   font-size: 12px;
   font-weight: 700;
   line-height: 16.8px;
@@ -18,13 +18,13 @@
   color: #8c8c8c;
   padding-bottom: 8px;
 }
-.collection__name {
+.collectionCard__name {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
   color: white;
 }
-.collection__button {
+.collectionCard__button {
   height: 44px;
   width: 44px;
   background-color: #666666;
@@ -33,7 +33,7 @@
   justify-content: center;
   align-items: center;
 }
-.collection__image{
+.collectionCard__image{
   border-radius: 20px;
 }
 .collectionCard_size_big {
@@ -41,4 +41,11 @@
   background-color: #231f20;
   border-radius: 20px;
   justify-content: space-between;
+  flex-direction: column;
+}
+.collectionCard__image-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 20px;
 }

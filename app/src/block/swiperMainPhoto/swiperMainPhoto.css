@@ -1,7 +1,0 @@
-.swiper-button-next::after {
-    background-image: url(../../../../public/images/arrow.svg);
-}
-.swiper-button-prev::after {
-    background-image: url(../../../../public/images/arrow-left.svg);
-    background-repeat: no-repeat;
-}

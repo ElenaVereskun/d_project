@@ -1,44 +1,44 @@
 import Image from "next/image";
 import arrow from "../../../../public/images/arrow.svg";
-import styles from "./styles.module.css";
 
 export function CollectionCard({ title, collectionImage }) {
   return (
-    <div className={styles.collectionCard}>
-      <div className={styles.collection__text}>
-        <div className={styles.collection__title}>
-          <p className={styles.collection__top}>Коллекция</p>
-          <h2 className={styles.collection__name}>{title}</h2>
+    <div className='collectionCard'>
+      <div className='collectionCard__text'>
+        <div className='collectionCard__title'>
+          <p className='collectionCard__top'>Коллекция</p>
+          <h2 className='collectionCard__name'>{title}</h2>
         </div>
-        <button className={styles.collection__button}>
+        <button className='collectionCard__button'>
           <Image src={arrow} alt="стрелка" />
         </button>
       </div>
       <Image
         src={collectionImage}
         alt="коллекция"
-        className={styles.collection__image}
+        className='collectionCard__image'
       />
     </div>
   );
 }
 export function CollectionBigCard({ title, collectionImage }) {
   return (
-    <div className={styles.collectionCard_size_big}>
-      <div className={styles.collection__text}>
-        <div className={styles.collection__title}>
-          <p className={styles.collection__top}>Коллекция</p>
-          <h2 className={styles.collection__name}>{title}</h2>
-        </div>
-        <button className={styles.collection__button}>
+    <div className='collectionCard_size_big'>
+      <div className='collectionCard__text'>
+        <p className='collectionCard__top'>Коллекция</p>
+        <h2 className='collectionCard__name'>{title}</h2>
+      </div>
+      <div className='collectionCard__image-wrapper'>
+        <button className='collectionCard__button'>
           <Image src={arrow} alt="стрелка" />
         </button>
+        <Image
+          src={collectionImage}
+          alt="коллекция"
+          className='collectionCard__image'
+        />
+
       </div>
-      <Image
-        src={collectionImage}
-        alt="коллекция"
-        className={styles.collection__image}
-      />
     </div>
   );
 }

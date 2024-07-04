@@ -6,10 +6,8 @@ import { Pagination } from "swiper/modules";
 
 import Image from "next/image";
 import newItemsData from "../../../mosk/newItemsData";
-import Card from "../Card/Card";
 import arrow from "../../../../public/images/arrow.svg";
-
-import styles from "./styles.module.css";
+import CardNewItem from "../CardNewItem/CardNewItem";
 
 export default function NewItems() {
   const parametr = {
@@ -21,38 +19,40 @@ export default function NewItems() {
     loop: false,
     modules: [Pagination],
     pagination: {
-      bulletActiveClass: styles.custom_swiper_pagination_bullet_active,
-      bulletClass: styles.custom_swiper_pagination_bullet,
+      bulletActiveClass: '.custom_swiper_pagination_bullet_active',
+      bulletClass: '.custom_swiper_pagination_bullet',
       clickable: true,
     }
   };
 
   return (
-    <div className={styles.new__contaner}>
-      <div className={styles.new__top}>
-        <h2 className={styles.new__title}>Новинки</h2>
-        <button className={styles.new__button}>
-          <p className={styles.new__button_text}>ВСЕ НОВИНКИ</p>
+    <div className='new__contaner'>
+      <div className='new__top'>
+        <h2 className='new__title'>Новинки</h2>
+        <button className='new__button'>
+          <p className='new__button_text'>ВСЕ НОВИНКИ</p>
           <Image src={arrow} alt="стрелка" />
         </button>
       </div>
 
-      <div className={styles.slider_container}>
-        <Swiper {...parametr} className={styles.swiper}>
+      <div className='slider_container'>
+        <Swiper {...parametr} className='swiper'>
           {newItemsData &&
             newItemsData.map((item) => (
-              <SwiperSlide key={item.id}>
-                <Card
-                  photo={item.photo}
-                  collection={item.collection}
-                  title={item.title}
-                  price={item.price}
-                  exPrice={item.exPrice}
-                />
-                <div className="swiper-pagination"></div>
-                <div className="swiper-button-next"></div>
-                <div className="swiper-button-prev"></div>
-              </SwiperSlide>
+              <div className='swiper-wrapper'>
+                <SwiperSlide key={item.id}>
+                  <CardNewItem
+                    photo={item.photo}
+                    collection={item.collection}
+                    title={item.title}
+                    price={item.price}
+                    exPrice={item.exPrice}
+                  />
+                  <div className="swiper-pagination"></div>
+                  <div className="swiper-button-next custom-swiper__button-next"></div>
+                  <div className="swiper-button-prev custom-swiper__button-prev"></div>
+                </SwiperSlide>
+              </div>
             ))}
         </Swiper>
       </div>

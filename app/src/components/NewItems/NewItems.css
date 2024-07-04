@@ -43,6 +43,23 @@
   display: flex;
   max-width: 100%;
 }
+/* .swiper-slide swiper-slide-active{
+  max-width: 455px;
+} */
+.custom-swiper__button-next {
+  background-image: url(../../../../public/images/arrow.svg);
+  background-repeat: no-repeat;
+  height: 44px;
+  width: 44px;
+  background-color: black;
+}
+.custom-swiper__button-prev {
+  background-image: url(../../../../public/images/arrow-left.svg);
+  background-repeat: no-repeat;
+  height: 44px;
+  width: 44px;
+  background-color: black; 
+}
 
 .slider_container :global .swiper-pagination-bullets {
   display: block;

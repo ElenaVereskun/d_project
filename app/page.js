@@ -1,13 +1,13 @@
-import Header from "./src/components/Header/header";
+import Header from "./src/components/Header/Header";
 import NewItems from "./src/components/NewItems/NewItems";
-import Slider from "./src/components/Slider/Slider";
+import SliderMain from "./src/components/SliderMain/SliderMain";
 import Collections from "./src/components/Collections/Collections";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <Slider />
+      <SliderMain />
       <NewItems />
       <Collections />
     </main>
