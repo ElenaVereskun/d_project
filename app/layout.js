@@ -5,7 +5,6 @@ import './index.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/swiper-bundle.min.css';
 
 import { Manrope } from 'next/font/google';
 
