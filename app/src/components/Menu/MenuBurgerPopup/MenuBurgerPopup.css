@@ -3,11 +3,18 @@
     top: 0;
     left: 0;
     bottom: 0;
+    background-color: rgba(46, 42, 42, 0.6);
+    right: 0;
+}
+.menu__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     background-color: white;
     width: 367px;
     padding: 20px;
 }
-
 .menu__button_close {
     width: 44px;
     height: 44px;

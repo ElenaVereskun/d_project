@@ -1,6 +1,10 @@
 .popup {
-  display: flex;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(46, 42, 42, 0.6);
+  right: 0;
 }
 
 .popup_block {
@@ -56,12 +60,14 @@
   font-weight: 700;
   color: black;
 }
-.popup__button_wrapper{
+
+.popup__button_wrapper {
   display: flex;
   gap: 10px;
   align-items: center;
 
 }
+
 .popup__button_send {
   margin-top: 10px;
   background-color: #231F20;

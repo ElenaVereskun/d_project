@@ -1,5 +1,5 @@
 import Header from "./src/components/Header/Header";
-import NewItems from "./src/components/NewItems/NewItems";
+import { NewItemsTitle, Slider } from "./src/components/NewItems/NewItems";
 import SliderMain from "./src/components/SliderMain/SliderMain";
 import Collections from "./src/components/Collections/Collections";
 import MenuNavBar from "./src/components/Menu/MenuNavBar/MenuNavBar";
@@ -9,7 +9,8 @@ export default function Home() {
     <main className="main">
       <Header />
       <SliderMain />
-      <NewItems />
+      <NewItemsTitle />
+      <Slider />
       <Collections />
       <div className="main__nav">
         <MenuNavBar />
