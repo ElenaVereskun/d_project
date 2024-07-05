@@ -93,7 +93,7 @@ export default function Header() {
             <MenuBurgerPopup onClickCloseButton={closeMenu} />
           )}
         </button>
-      </div>      
+      </div>
       <PopupCallback isOpen={isOpen} onClickCloseButton={closePopup} />
     </section>
   );

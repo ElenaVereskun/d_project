@@ -1,7 +1,6 @@
 .swiper {
   display: flex;
   flex-direction: column;
- /*  margin: auto 0; */
   align-items: center;
   z-index: 0;
 }
@@ -12,7 +11,8 @@
   height: 1058px;
   border-radius: 20px;
 }
- .slider_container {
+
+.slider_container {
   display: flex;
   max-width: 100%;
 }
@@ -20,11 +20,27 @@
 .slider_container :global .swiper-pagination-bullets {
   display: block;
 }
-.swiper-button-prev::after{
-  color: white;
+
+.swiper-button-prev::after {
+  color: #231F20;
+  background-color: #231F20;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../../public/images/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position:center;
 }
-.swiper-button-next::after{
-  color: white;
+
+.swiper-button-next::after {
+  color: #231F20;
+  background-color: #231F20;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../../../public/images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position:center;
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
@@ -51,36 +67,39 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 743px) {
   .image {
     height: 500px;
   }
-  .slider_container :global .swiper-pagination-bullets {
+
+  .swiper-pagination-bullets {
     display: flex;
     justify-content: center;
     column-gap: 11px;
-    margin: 20px 0 20px 0;
   }
 
-  .custom_swiper_pagination_bullet {
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background-color: green;
+  .swiper__pagination-bullet {
+    width: 14px;
+    height: 5px;
+    background-color: #C1C1C1;
+    border-radius: 2px;
     opacity: 1;
     cursor: pointer;
   }
 
-  .custom_swiper_pagination_bullet_active {
-    background-color: red;
+  .swiper__pagination-bullet_active {
+    background-color: #231F20;
   }
 
-  .custom_swiper_pagination_bullet:active {
-    background-color: blue;
+  .swiper__pagination-bullet:active {
+    background-color: #231F20;
   }
-
-  .custom_swiper_pagination_bullet {
-    width: 10px;
-    height: 10px;
+}
+@media screen and (max-width: 360px) {
+  .swiper-button-prev::after {
+    display: none;
+  }
+  .swiper-button-next::after {
+    display: none;
   }
 }

@@ -56,9 +56,10 @@
 
 /* макет на 360 */
 @media screen and (max-width: 743px) {
-  .new__contaner{
-    margin-bottom: -85px;
+  .new__contaner {
+    margin-bottom: -130px;
   }
+
   .new__button_type_desktop {
     display: none;
   }
@@ -66,43 +67,38 @@
   .new__button_type_mobile {
     display: flex;
     width: 196px;
-    margin-top: 10px;
     margin-bottom: 60px;
-    transform: translateY(570px);
+    transform: translateY(515px);
   }
 
- /*  .slider_container :global .swiper-pagination-bullets {
+  .swiper-pagination-bullets {
     display: flex;
     justify-content: center;
     column-gap: 11px;
-    margin: 20px 0 20px 0;
-    color: black;
+  
+    top: 40px;
+  }
+
+  .swiper-pagination {
+    opacity: 1;
   }
 
   .custom_swiper_pagination_bullet {
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background-color: green;
+    width: 14px;
+    height: 5px;
+    border-radius: 2px 0px 0px 0px;
+    background-color: #C1C1C1;
     opacity: 1;
     cursor: pointer;
   }
 
   .custom_swiper_pagination_bullet_active {
-    background-color: red;
+    background-color: #231F20;
+    opacity: 1;
   }
 
   .custom_swiper_pagination_bullet:active {
-    background-color: blue;
-  }
-
-  .custom_swiper_pagination_bullet {
-    width: 10px;
-    height: 10px;
-  } */
-  .custom_swiper_pagination_bullet{
-    color: red;
-    width: 20px;
-    height: 20px;
+    background-color: #231F20;
+    opacity: 1;
   }
 }

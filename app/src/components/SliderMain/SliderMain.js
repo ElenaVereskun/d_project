@@ -19,8 +19,8 @@ export default function SliderMain() {
     loop: false,
     modules: [Pagination],
     pagination: {
-      bulletActiveClass: '.custom_swiper_pagination_bullet_active',
-      bulletClass:'.custom_swiper_pagination_bullet',
+      bulletActiveClass: 'swiper__pagination-bullet_active',
+      bulletClass: 'swiper__pagination-bullet',
       clickable: true,
     }
   };
@@ -48,7 +48,7 @@ export default function SliderMain() {
               <Image src={item.photo} alt="фото" className='image' />
               <div className="swiper-pagination"></div>
               <div className="swiper-button-next"></div>
-              <div className="swiper-button-prev swiper__button_prev"></div>
+              <div className="swiper-button-prev"></div>
             </SwiperSlide>
           ))}
       </Swiper>
