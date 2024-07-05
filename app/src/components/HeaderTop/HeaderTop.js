@@ -13,7 +13,7 @@ import like from "../../../../public/images/like.svg";
 import bag from "../../../../public/images/shopping-bag.png";
 import menu from "../../../../public/images/menu.svg";
 
-export default function Header() {
+export default function HeaderTop() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenDrop, setIsOpenDrop] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
